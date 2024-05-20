@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup-style.css">
+    <link rel="icon" type="image/png" href="icon.png" />
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+    <script src="assets/js/jquery.js"></script> 
+    <script src="assets/js/popper.js"></script> 
+    <script src="assets/js/bootstrap.js"></script>
+
+</head>
+<body>
+    <main>
+        <div class="background">
+            <div class="text">
+                <h1>Signup</h1>
+                <p>Have Account? <a href="login.html">Login</a></p>
+            </div>
+            <div class="box">
+                <form class="form" name="form" action="php/register.php" method = "POST" enctype="multipart/form-data">
+                    <h4>Alamat</h4>
+                    <textarea class="textarea-register-profile" name="Alamat" placeholder="jl.xxx"></textarea>
+                    <input type="text" class="fullname" placeholder="Nomor Telepon" name="nomor" required>
+                    <input type="email" class="email" placeholder="Email" name="email" required>
+                    <input type="password" class="password" placeholder="Password" name="password" required>
+                    
+                    <div class="box2">
+                        <div class="form">
+                        <label>
+                        <i class="fas fa-store fa-2x"></i>
+                        <input type="radio" name="tipe" value="Supplier"  />Supplier
+                        <i class="fas fa-store-alt fa-2x"></i>
+                        <input type="radio" name="tipe" value="Trader"  />Trader
+                    </label>
+                    <input type="text" class="username" placeholder="Username" name="username" required>
+                    <input type="text" class="username" placeholder="Name" name="name" required>
+                    <h4>Jenis Kelamin</h4>
+                    <label>
+                        <i class="fas fa-male fa-2x"></i>
+                        <input type="radio" name="jeniskelamin" value="Laki-Laki"  />Laki-Laki
+                        <i class="fas fa-female fa-2x"></i>
+                        <input type="radio" name="jeniskelamin" value="Perempuan"  />Perempuan
+                    </label>
+                     <input type="text" class="username" placeholder="Nama Toko" name="storename" required>
+                        </div> 
+                    </div>
+                    <div class="box3">
+                        <div class="form">
+                        <h4>Foto Anda</h4>
+                        <input type="file" class="custom-file-input" id="customFile" name="fotouser">
+                        <h4>Foto Toko</h4>
+                        <input type="file" class="custom-file-input" id="customFile" name="fototoko">
+                    </div>
+                </div>
+                <input type="submit" class="button"  name="register">
+            </form>
+        </div>
+        </div>
+    </main>
+</body>
+</html>
