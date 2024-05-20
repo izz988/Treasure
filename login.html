@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="login-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="icon.png" />
+	<script src="assets/js/jquery.js"></script> 
+	<script src="assets/js/popper.js"></script> 
+	<script src="assets/js/bootstrap.js"></script>
+</head>
+<body>
+    <main>
+        <div class="background">
+            <div class="text">
+                <h1>Login</h1>
+                <p style="color: white;">No Account? <a href="signup.html">Sign up</a></p>
+            </div>
+
+            <div class="icon">
+            	<i class="fas fa-user-circle fa-5x"></i>
+            </div>
+
+            <div class="box">
+                <form class="form" name="form" action="php/login.php?op=in" method="POST">
+                    <input type="text" class="username" placeholder="Username" name="username" required>
+                    <input type="password" class="password" placeholder="Password" name="password" required>
+                    <input type="submit" class="button" value="Login" name="login">
+
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
